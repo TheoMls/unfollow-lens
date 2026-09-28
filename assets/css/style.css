@@ -185,13 +185,10 @@ h1 {
 
 /* Privacy Banner Styling */
 .privacy-banner {
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
     max-width: 600px;
     margin: 0 auto 24px auto;
-    padding: 10px 16px;
     font-size: 0.88rem;
     text-align: center;
 }
