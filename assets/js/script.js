@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const followersInput = document.getElementById("followers-input");
     const followingInput = document.getElementById("following-input");
-    const followersOutput = document.getElementById("selected-followers");
-    const followingOutput = document.getElementById("selected-following");
 
     let followersSet = null;
     let followingList = null;
@@ -182,7 +180,7 @@ function buildUserListElement(users, emptyMessage) {
     if (users.length === 0) {
         const emptyParagraph = document.createElement("p");
         emptyParagraph.className = "empty-msg";
-        emptyParagraph.textContent = emptyMessage; // Safe text insertion
+        emptyParagraph.textContent = emptyMessage;
         container.appendChild(emptyParagraph);
         return container;
     }
